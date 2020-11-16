@@ -1,0 +1,43 @@
+.main-footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  width: 100vw;
+  padding: 0 10vw;
+  color: white;
+  z-index: 1;
+  transition: 0.4s ease-out; //quando scrollo header non diventa di colpo nero ma gradualmene
+  bottom: 0;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+  }
+
+  .social-links {
+    display: flex;
+    list-style: none;
+
+    .social-link {
+      transition: opacity 0.4s ease-in-out,
+        transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+      a {
+        margin: 0.2rem;
+        padding: 1rem 0.5rem;
+      }
+      a:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+
+  &.scrolled {
+    height: 50px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+  }
+}

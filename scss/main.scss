@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import "hero"; //toglie dal file scss _
+@import "header";
+@import "media";
+@import "animations";
+@import "footer";
+@import "container-images";
+@import "contacts";
+@import "aboutMe";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden; //non scrolla la page a dx e sx
+
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%; //5 slider
+    height: 100%;
+    float: left;
+    animation: animate 20s linear infinite;
+
+    .slide {
+      position: relative;
+      width: 20%;
+      height: 100%;
+      float: left;
+
+      .caption {
+        position: absolute;
+        bottom: 60px;
+        left: 60px;
+        right: 60px;
+        padding: 30px;
+        background: rgba(0, 0, 0, 0.5);
+        box-sizing: border-box;
+
+        h2 {
+          margin: 0 0 20px;
+          padding: 0;
+          color: #fff;
+          font-size: 50px;
+          font-family: "Indie Flower", cursive;
+        }
+
+        p {
+          margin: 0;
+          padding: 0;
+          color: #fff;
+          font-size: 25px;
+          font-family: "Indie Flower", cursive;
+        }
+      }
+    }
+  }
+}
+
+.container .slider .slide.slide1 {
+  background: url("../images/img-68.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container .slider .slide.slide2 {
+  background: url("../images/img-38.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container .slider .slide.slide3 {
+  background: url("../images/img-39.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container .slider .slide.slide4 {
+  background: url("../images/img-115.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden; //non scrolla la page a dx e sx
+
+    .slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 500%; //5 slider
+      height: 100%;
+      float: left;
+      animation: animate 20s linear infinite;
+
+      .slide {
+        position: relative;
+        width: 20%;
+        height: 100%;
+        float: left;
+
+        .caption {
+          position: absolute;
+          bottom: 60px;
+          left: 20px;
+          right: 20px;
+          padding: 20px;
+          background: rgba(0, 0, 0, 0.5);
+          box-sizing: border-box;
+
+          h2 {
+            margin: 0 0 10px;
+            font-size: 35px;
+            font-family: "Indie Flower", cursive;
+          }
+
+          p {
+            font-size: 20px;
+            font-family: "Indie Flower", cursive;
+          }
+        }
+      }
+    }
+  }
+
+  .container .slider .slide.slide1 {
+    background: url("../images/img-68.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container .slider .slide.slide2 {
+    background: url("../images/img-38.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container .slider .slide.slide3 {
+    background: url("../images/img-39.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container .slider .slide.slide4 {
+    background: url("../images/img-115.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.titolo {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+
+  h1 {
+    font-size: 45px;
+    font-family: "Dancing Script", cursive;
+  }
+
+  p {
+    font-size: 25px;
+    font-family: "Indie Flower", cursive;
+  }
+}
+
+.copy {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}

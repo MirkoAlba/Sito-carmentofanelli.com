@@ -1,0 +1,87 @@
+.container-am {
+  margin: 0;
+  padding: 0;
+  background: url("https://picsum.photos/720/360") no-repeat;
+  background-size: cover;
+
+  .box-am {
+    width: 900px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: white;
+
+    .box-img-am {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+    }
+
+    h1 {
+      font-size: 50px;
+      letter-spacing: 4px;
+      font-weight: 100;
+      font-family: "Dancing Script", cursive;
+    }
+
+    h5 {
+      font-size: 30px;
+      letter-spacing: 3px;
+      font-weight: 100;
+      font-family: "Indie Flower", cursive;
+    }
+
+    p {
+      text-align: center;
+      font-size: 25px;
+      font-family: "Indie Flower", cursive;
+    }
+  }
+}
+
+@media screen and(max-width:768px) {
+  .container-am {
+    margin: 0;
+    padding: 0;
+    background: url("https://picsum.photos/720/360") no-repeat;
+    background-size: cover;
+
+    .box-am {
+      width: 400px;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 40px;
+      text-align: center;
+      margin: auto;
+      margin-top: 0;
+      margin-bottom: 50px;
+      color: white;
+      //fontfamily
+
+      .box-img-am {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+      }
+
+      h1 {
+        font-size: 50px;
+        letter-spacing: 4px;
+        font-weight: 100;
+      }
+
+      h5 {
+        font-size: 30px;
+        letter-spacing: 3px;
+        font-weight: 100;
+      }
+
+      p {
+        text-align: center;
+        font-size: 25px;
+      }
+    }
+  }
+}

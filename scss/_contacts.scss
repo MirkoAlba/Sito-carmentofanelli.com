@@ -1,0 +1,74 @@
+.contact-info {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+
+  .card {
+    background: black;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(25% - 20px); //25% perchè sono 4 elementi
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 2rem;
+
+    .card-icon {
+      font-size: 40px;
+      background: #0abab5;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      line-height: 60px !important;
+      border-radius: 50%;
+      transition: 0.3s linear;
+    }
+
+    p {
+      margin-top: 40px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      max-height: 0;
+      opacity: 0;
+      transition: 0.3s linear;
+    }
+  }
+
+  .card:hover .card-icon {
+    background: none;
+    color: #0abab5;
+    transform: scale(1.6);
+  }
+
+  .card:hover p {
+    max-height: 40px;
+    opacity: 1;
+  }
+}
+
+@media screen and(max-width:768px) {
+  .contact-info {
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    .card {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px 0;
+    }
+  }
+}
+
+.container-contacts {
+  background: #2e2e2e;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
